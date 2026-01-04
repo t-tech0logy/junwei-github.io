@@ -52,6 +52,11 @@
     --nav-dropdown-hover-color: #ff4d4f; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
     }
 
+    a {
+  text-decoration: none!important;
+  color: inherit; /* optional: keep link color same as surrounding text */
+    }
+
     /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
     .light-background {
@@ -4254,7 +4259,7 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
+      <a class="logo d-flex align-items-center me-auto">
         <h1 class="sitename">JW</h1>
       </a>
 
@@ -4263,7 +4268,6 @@
           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#resume">Resume</a></li>
-          <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -4280,7 +4284,7 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="img/1.jpeg" alt="" data-aos="fade-in">
+      <img src="./img/1.jpeg" alt="" data-aos="fade-in">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row justify-content-center">
@@ -4322,7 +4326,7 @@
 
             <div class="profile-header">
                 <div class="profile-avatar">
-                <img src="img/3.jpeg" class="img-fluid" alt="Liao Jun Wei">
+                <img src="./img/3.jpeg" class="img-fluid" alt="Liao Jun Wei">
                 <div class="status-indicator"></div>
                 </div>
 
@@ -4632,8 +4636,7 @@
                 <span class="section-badge">Education</span>
                 <h2>Coaching Credentials</h2>
                 <p>
-                    Professionally certified coach with nationally and
-                    internationally recognised qualifications.
+                    Professionally certified coach with nationally and internationally recognised qualifications.
                 </p>
                 </div>
             </div>
@@ -4641,63 +4644,56 @@
             <div class="education-timeline" data-aos="fade-left" data-aos-delay="300">
                 <div class="timeline-track">
 
-                <!-- BWF -->
-                <div class="timeline-item">
-                    <div class="timeline-marker">
-                    <i class="bi bi-award-fill"></i>
-                    </div>
-
-                    <div class="timeline-content">
-                    <div class="education-meta">
-                        <span class="year-range">Certified</span>
-                        <span class="degree-level">International</span>
-                    </div>
-                    <h4>BWF Level 1 Coaching Certification</h4>
-                    <p class="institution">Badminton World Federation</p>
-                    <p class="description">
-                        International certification covering technical skill
-                        development, coaching methodology, and player progression.
-                    </p>
-                    </div>
-                </div>
-
-                <!-- NROC -->
-                <div class="timeline-item">
-                    <div class="timeline-marker">
-                    <i class="bi bi-patch-check-fill"></i>
-                    </div>
-
-                    <div class="timeline-content">
-                    <div class="education-meta">
-                        <span class="year-range">Certified</span>
-                        <span class="degree-level">National</span>
-                    </div>
-                    <h4>National Registry of Coaches (NROC)</h4>
-                    <p class="institution">Sport Singapore</p>
-                    <p class="description">
-                        Accredited national coaching certification ensuring
-                        professional standards, athlete welfare, and ethical coaching.
-                    </p>
-                    </div>
-                </div>
-
-                <!-- MOE -->
+                <!-- Diploma in Sports Coaching -->
                 <div class="timeline-item">
                     <div class="timeline-marker">
                     <i class="bi bi-mortarboard-fill"></i>
                     </div>
-
                     <div class="timeline-content">
                     <div class="education-meta">
-                        <span class="year-range">Certified</span>
-                        <span class="degree-level">School Programmes</span>
+                        <span class="year-range">Diploma</span>
+                        <span class="degree-level">RP</span>
                     </div>
-                    <h4>MOE Badminton Coaching Certification</h4>
-                    <p class="institution">Ministry of Education (Singapore)</p>
+                    <h4>Diploma in Sports Coaching</h4>
+                    <p class="institution">Republic Polytechnic</p>
                     <p class="description">
-                        Qualified to coach students within school systems,
-                        emphasising safety, development pathways, and character
-                        building through sport.
+                        Comprehensive program covering coaching theory, practical skills, and athlete development.
+                    </p>
+                    </div>
+                </div>
+
+                <!-- Certificate in Sport Team Management -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                    <i class="bi bi-patch-check-fill"></i>
+                    </div>
+                    <div class="timeline-content">
+                    <div class="education-meta">
+                        <span class="year-range">Certificate</span>
+                        <span class="degree-level">Professional</span>
+                    </div>
+                    <h4>Certificate in Sport Team Management</h4>
+                    <p class="institution">Sport Singapore</p>
+                    <p class="description">
+                        Focus on team administration, event planning, and performance management in sports environments.
+                    </p>
+                    </div>
+                </div>
+
+                <!-- Certificate in Professional Practice in Coaching -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                    <i class="bi bi-award-fill"></i>
+                    </div>
+                    <div class="timeline-content">
+                    <div class="education-meta">
+                        <span class="year-range">Certificate</span>
+                        <span class="degree-level">Professional</span>
+                    </div>
+                    <h4>Certificate in Professional Practice in Coaching</h4>
+                    <p class="institution">National Coaching Academy / Sport Authority</p>
+                    <p class="description">
+                        Training in coaching methodologies, ethical practice, and athlete-centered development.
                     </p>
                     </div>
                 </div>
@@ -4749,14 +4745,14 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-training">
             <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                <img src="img/1.jpeg" alt="Technical Training Session" class="img-fluid" loading="lazy">
+                <img src="./img/1.jpeg" alt="Technical Training Session" class="img-fluid" loading="lazy">
                 <div class="portfolio-overlay">
                     <div class="portfolio-info">
                     <span class="project-category">Technical Training</span>
                     <h4>Footwork & Stroke Development</h4>
                     </div>
                     <div class="portfolio-actions">
-                    <a href="img/1.jpeg" class="glightbox portfolio-link">
+                    <a href="./img/1.jpeg" class="glightbox portfolio-link">
                         <i class="bi bi-plus-lg"></i>
                     </a>
                     </div>
@@ -4776,14 +4772,14 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
             <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                <img src="img/2.jpeg" alt="Youth Development Programme" class="img-fluid" loading="lazy">
+                <img src="./img/2.jpeg" alt="Youth Development Programme" class="img-fluid" loading="lazy">
                 <div class="portfolio-overlay">
                     <div class="portfolio-info">
                     <span class="project-category">Player Development</span>
                     <h4>Youth Training Programme</h4>
                     </div>
                     <div class="portfolio-actions">
-                    <a href="img/2.jpeg" class="glightbox portfolio-link">
+                    <a href="/img/2.jpeg" class="glightbox portfolio-link">
                         <i class="bi bi-plus-lg"></i>
                     </a>
                     </div>
@@ -4803,14 +4799,14 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-competition">
             <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                <img src="img/3.jpeg" alt="ASEAN Para Games Coaching" class="img-fluid" loading="lazy">
+                <img src="./img/3.jpeg" alt="ASEAN Para Games Coaching" class="img-fluid" loading="lazy">
                 <div class="portfolio-overlay">
                     <div class="portfolio-info">
                     <span class="project-category">International Competition</span>
                     <h4>ASEAN Para Games 2023</h4>
                     </div>
                     <div class="portfolio-actions">
-                    <a href="img/3.jpeg" class="glightbox portfolio-link">
+                    <a href="./img/3.jpeg" class="glightbox portfolio-link">
                         <i class="bi bi-plus-lg"></i>
                     </a>
                     </div>
@@ -4830,14 +4826,14 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-team">
             <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                <img src="img/4.jpeg" alt="Team Training Session" class="img-fluid" loading="lazy">
+                <img src="./img/4.jpeg" alt="Team Training Session" class="img-fluid" loading="lazy">
                 <div class="portfolio-overlay">
                     <div class="portfolio-info">
                     <span class="project-category">Team Coaching</span>
                     <h4>School & Club Teams</h4>
                     </div>
                     <div class="portfolio-actions">
-                    <a href="img/4.jpeg" class="glightbox portfolio-link">
+                    <a href="./img/4.jpeg" class="glightbox portfolio-link">
                         <i class="bi bi-plus-lg"></i>
                     </a>
                     </div>
@@ -4857,14 +4853,14 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
             <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                <img src="img/5.jpeg" alt="Elite Athlete Coaching" class="img-fluid" loading="lazy">
+                <img src="./img/5.jpeg" alt="Elite Athlete Coaching" class="img-fluid" loading="lazy">
                 <div class="portfolio-overlay">
                     <div class="portfolio-info">
                     <span class="project-category">Elite Coaching</span>
                     <h4>Advanced Performance Training</h4>
                     </div>
                     <div class="portfolio-actions">
-                    <a href="img/5.jpeg" class="glightbox portfolio-link">
+                    <a href="./img/5.jpeg" class="glightbox portfolio-link">
                         <i class="bi bi-plus-lg"></i>
                     </a>
                     </div>
@@ -4884,14 +4880,14 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-training">
             <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                <img src="assets/img/portfolio/portfolio-6.webp" alt="Private Coaching Session" class="img-fluid" loading="lazy">
+                <img src="./img/1.jpeg" alt="Private Coaching Session" class="img-fluid" loading="lazy">
                 <div class="portfolio-overlay">
                     <div class="portfolio-info">
                     <span class="project-category">Private Coaching</span>
                     <h4>1-to-1 Personal Training</h4>
                     </div>
                     <div class="portfolio-actions">
-                    <a href="assets/img/portfolio/portfolio-6.webp" class="glightbox portfolio-link">
+                    <a href="./img/1.jpeg" class="glightbox portfolio-link">
                         <i class="bi bi-plus-lg"></i>
                     </a>
                     </div>
@@ -4959,7 +4955,7 @@
               </div>
               <div>
                 <h3>Address</h3>
-                <p>2847 Oak Street, San Francisco, CA 94102</p>
+                <p>Singapore</p>
               </div>
             </div>
 
@@ -4989,7 +4985,8 @@
 
       </div>
 
-    </section><!-- /Contact Section -->
+    </section>
+    <!-- /Contact Section -->
 
 
   </main>
@@ -5001,7 +4998,7 @@
 
         <!-- Brand / About -->
         <div class="col-lg-5 col-md-12 footer-about">
-            <a href="index.html" class="logo d-flex align-items-center">
+            <a class="logo d-flex align-items-center">
             <span class="sitename">JW Badminton</span>
             </a>
             <p>
@@ -5022,7 +5019,6 @@
             <ul>
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#services">Coaching</a></li>
             <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
