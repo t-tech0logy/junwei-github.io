@@ -2438,329 +2438,331 @@
     }
     }
 
-    /*--------------------------------------------------------------
-    # Testimonials Section
-    --------------------------------------------------------------*/
-    .testimonials {
-    position: relative;
-    overflow: hidden;
+/*--------------------------------------------------------------
+# Testimonials Section
+--------------------------------------------------------------*/
+.testimonials {
+    position: relative !important;
+    overflow: hidden !important;
     /* Swiper Navigation */
     /* Swiper Pagination */
     /* Responsive Styles */
-    }
+}
 
-    .testimonials .testimonial-slider {
-    position: relative;
-    padding-bottom: 50px;
-    }
+.testimonials .testimonial-slider {
+    position: relative !important;
+    padding-bottom: 50px !important;
+}
 
-    .testimonials .testimonial-slider .swiper-wrapper {
+.testimonials .testimonial-slider .swiper-wrapper {
     height: auto !important;
-    }
+}
 
-    .testimonials .testimonial-item {
-    background: linear-gradient(135deg, var(--surface-color) 0%, color-mix(in srgb, var(--surface-color), var(--accent-color) 2%) 100%);
-    border-radius: 20px;
-    padding: 0;
-    height: 100%;
-    border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-    transition: all 0.4s ease;
-    overflow: hidden;
-    position: relative;
-    }
+.testimonials .testimonial-item {
+    background: linear-gradient(135deg, var(--surface-color) 0%, color-mix(in srgb, var(--surface-color), var(--accent-color) 2%) 100%) !important;
+    border-radius: 20px !important;
+    padding: 0 !important;
+    height: 100% !important;
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%) !important;
+    transition: all 0.4s ease !important;
+    overflow: hidden !important;
+    position: relative !important;
+}
 
-    .testimonials .testimonial-item::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, var(--accent-color), color-mix(in srgb, var(--accent-color), var(--heading-color) 30%));
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.4s ease;
-    }
+.testimonials .testimonial-item::before {
+    content: "" !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 4px !important;
+    background: linear-gradient(90deg, var(--accent-color), color-mix(in srgb, var(--accent-color), var(--heading-color) 30%)) !important;
+    transform: scaleX(0) !important;
+    transform-origin: left !important;
+    transition: transform 0.4s ease !important;
+}
 
-    .testimonials .testimonial-item:hover {
-    border-color: var(--accent-color);
-    }
+.testimonials .testimonial-item:hover {
+    border-color: var(--accent-color) !important;
+}
 
-    .testimonials .testimonial-item:hover::before {
-    transform: scaleX(1);
-    }
+.testimonials .testimonial-item:hover::before {
+    transform: scaleX(1) !important;
+}
 
-    .testimonials .testimonial-item:hover .testimonial-header img {
-    transform: scale(1.05);
-    }
+.testimonials .testimonial-item:hover .testimonial-header img {
+    transform: scale(1.05) !important;
+}
 
-    .testimonials .testimonial-item:hover .quote-icon {
-    color: var(--accent-color);
-    transform: scale(1.1);
-    }
+.testimonials .testimonial-item:hover .quote-icon {
+    color: var(--accent-color) !important;
+    transform: scale(1.1) !important;
+}
 
-    .testimonials .testimonial-header {
-    position: relative;
-    text-align: center;
-    padding: 30px 30px 20px;
-    background: linear-gradient(135deg, color-mix(in srgb, var(--surface-color), var(--accent-color) 3%) 0%, var(--surface-color) 100%);
-    }
+.testimonials .testimonial-header {
+    position: relative !important;
+    text-align: center !important;
+    padding: 30px 30px 20px !important;
+    background: linear-gradient(135deg, color-mix(in srgb, var(--surface-color), var(--accent-color) 3%) 0%, var(--surface-color) 100%) !important;
+}
 
-    .testimonials .testimonial-header img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid color-mix(in srgb, var(--accent-color), transparent 70%);
-    margin-bottom: 15px;
-    transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    }
+.testimonials .testimonial-header img {
+    width: 80px !important;
+    height: 80px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    border: 4px solid color-mix(in srgb, var(--accent-color), transparent 70%) !important;
+    margin-bottom: 15px !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1) !important;
+}
 
-    .testimonials .testimonial-header .rating {
-    display: flex;
-    justify-content: center;
-    gap: 3px;
-    }
+.testimonials .testimonial-header .rating {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 3px !important;
+}
 
-    .testimonials .testimonial-header .rating i {
-    color: #ffc107;
-    font-size: 0.9rem;
-    }
+.testimonials .testimonial-header .rating i {
+    color: #ffc107 !important;
+    font-size: 0.9rem !important;
+}
 
-    .testimonials .testimonial-body {
-    padding: 0 30px 20px;
-    }
+.testimonials .testimonial-body {
+    padding: 0 30px 20px !important;
+}
 
-    .testimonials .testimonial-body p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: color-mix(in srgb, var(--default-color), transparent 20%);
-    margin: 0;
-    font-style: italic;
-    text-align: center;
-    position: relative;
-    }
+.testimonials .testimonial-body p {
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+    color: color-mix(in srgb, var(--default-color), transparent 20%) !important;
+    margin: 0 !important;
+    font-style: italic !important;
+    text-align: center !important;
+    position: relative !important;
+}
 
-    .testimonials .testimonial-body p::before,
-    .testimonials .testimonial-body p::after {
-    content: '"';
-    font-size: 1.5rem;
-    color: var(--accent-color);
-    opacity: 0.6;
-    font-family: serif;
-    position: absolute;
-    }
+.testimonials .testimonial-body p::before,
+.testimonials .testimonial-body p::after {
+    content: '"' !important;
+    font-size: 1.5rem !important;
+    color: var(--accent-color) !important;
+    opacity: 0.6 !important;
+    font-family: serif !important;
+    position: absolute !important;
+}
 
-    .testimonials .testimonial-body p::before {
-    top: -5px;
-    left: -10px;
-    }
+.testimonials .testimonial-body p::before {
+    top: -5px !important;
+    left: -10px !important;
+}
 
-    .testimonials .testimonial-body p::after {
-    bottom: -20px;
-    right: -5px;
-    }
+.testimonials .testimonial-body p::after {
+    bottom: -20px !important;
+    right: -5px !important;
+}
 
-    .testimonials .testimonial-footer {
-    padding: 20px 30px 30px;
-    text-align: center;
-    position: relative;
-    }
+.testimonials .testimonial-footer {
+    padding: 20px 30px 30px !important;
+    text-align: center !important;
+    position: relative !important;
+}
 
-    .testimonials .testimonial-footer h5 {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--heading-color);
-    margin: 0 0 5px;
-    }
+.testimonials .testimonial-footer h5 {
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    color: var(--heading-color) !important;
+    margin: 0 0 5px !important;
+}
 
-    .testimonials .testimonial-footer span {
-    font-size: 0.85rem;
-    color: color-mix(in srgb, var(--default-color), transparent 40%);
-    display: block;
-    margin-bottom: 15px;
-    }
+.testimonials .testimonial-footer span {
+    font-size: 0.85rem !important;
+    color: color-mix(in srgb, var(--default-color), transparent 40%) !important;
+    display: block !important;
+    margin-bottom: 15px !important;
+}
 
-    .testimonials .testimonial-footer .quote-icon {
-    position: absolute;
-    bottom: 15px;
-    right: 25px;
-    color: color-mix(in srgb, var(--accent-color), transparent 60%);
-    font-size: 1.5rem;
-    transition: all 0.3s ease;
-    }
+.testimonials .testimonial-footer .quote-icon {
+    position: absolute !important;
+    bottom: 15px !important;
+    right: 25px !important;
+    color: color-mix(in srgb, var(--accent-color), transparent 60%) !important;
+    font-size: 1.5rem !important;
+    transition: all 0.3s ease !important;
+}
 
-    .testimonials .swiper-navigation {
-    position: relative;
-    margin-top: 25px;
-    display: flex;
-    justify-content: flex-end;
-    }
+.testimonials .swiper-navigation {
+    position: relative !important;
+    margin-top: 25px !important;
+    display: flex !important;
+    justify-content: flex-end !important;
+}
 
-    .testimonials .swiper-button-prev,
-    .testimonials .swiper-button-next {
-    position: static;
-    width: 45px;
-    height: 45px;
-    margin: 0 10px;
-    background: var(--accent-color);
-    border-radius: 50%;
-    color: var(--contrast-color);
-    font-size: 16px;
-    transition: all 0.3s ease;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    }
+.testimonials .swiper-button-prev,
+.testimonials .swiper-button-next {
+    position: static !important;
+    width: 45px !important;
+    height: 45px !important;
+    margin: 0 10px !important;
+    background: var(--accent-color) !important;
+    border-radius: 50% !important;
+    color: var(--contrast-color) !important;
+    font-size: 16px !important;
+    transition: all 0.3s ease !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+}
 
-    .testimonials .swiper-button-prev:hover,
-    .testimonials .swiper-button-next:hover {
-    background: color-mix(in srgb, var(--accent-color), var(--heading-color) 20%);
-    transform: scale(1.05);
-    }
+.testimonials .swiper-button-prev:hover,
+.testimonials .swiper-button-next:hover {
+    background: color-mix(in srgb, var(--accent-color), var(--heading-color) 20%) !important;
+    transform: scale(1.05) !important;
+}
 
-    .testimonials .swiper-button-prev::after,
-    .testimonials .swiper-button-next::after {
-    font-size: 16px;
-    font-weight: 600;
-    }
+.testimonials .swiper-button-prev::after,
+.testimonials .swiper-button-next::after {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
 
-    .testimonials .swiper-pagination {
-    position: static;
-    margin-top: 30px;
-    text-align: center;
-    }
+.testimonials .swiper-pagination {
+    position: static !important;
+    margin-top: 30px !important;
+    text-align: center !important;
+}
 
-    .testimonials .swiper-pagination .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    background: color-mix(in srgb, var(--default-color), transparent 70%);
-    opacity: 1;
-    margin: 0 6px;
-    transition: all 0.3s ease;
-    }
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+    width: 12px !important;
+    height: 12px !important;
+    background: color-mix(in srgb, var(--default-color), transparent 70%) !important;
+    opacity: 1 !important;
+    margin: 0 6px !important;
+    transition: all 0.3s ease !important;
+}
 
-    .testimonials .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background: var(--accent-color);
-    transform: scale(1.2);
-    }
+.testimonials .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: var(--accent-color) !important;
+    transform: scale(1.2) !important;
+}
 
-    @media (max-width: 1199px) {
+/* ---------------- MEDIA QUERIES ---------------- */
+@media (max-width: 1199px) {
     .testimonials .testimonial-item .testimonial-header {
-        padding: 25px 25px 15px;
+        padding: 25px 25px 15px !important;
     }
 
     .testimonials .testimonial-item .testimonial-header img {
-        width: 70px;
-        height: 70px;
+        width: 70px !important;
+        height: 70px !important;
     }
 
     .testimonials .testimonial-item .testimonial-body,
     .testimonials .testimonial-item .testimonial-footer {
-        padding-left: 25px;
-        padding-right: 25px;
+        padding-left: 25px !important;
+        padding-right: 25px !important;
     }
-    }
+}
 
-    @media (max-width: 991px) {
+@media (max-width: 991px) {
     .testimonials .testimonial-item {
-        margin-bottom: 30px;
+        margin-bottom: 30px !important;
     }
-    }
+}
 
-    @media (max-width: 767px) {
+@media (max-width: 767px) {
     .testimonials .testimonial-item .testimonial-header {
-        padding: 20px 20px 10px;
+        padding: 20px 20px 10px !important;
     }
 
     .testimonials .testimonial-item .testimonial-header img {
-        width: 60px;
-        height: 60px;
+        width: 60px !important;
+        height: 60px !important;
     }
 
     .testimonials .testimonial-item .testimonial-header .rating i {
-        font-size: 0.8rem;
+        font-size: 0.8rem !important;
     }
 
     .testimonials .testimonial-item .testimonial-body {
-        padding: 0 20px 15px;
+        padding: 0 20px 15px !important;
     }
 
     .testimonials .testimonial-item .testimonial-body p {
-        font-size: 0.95rem;
+        font-size: 0.95rem !important;
     }
 
     .testimonials .testimonial-item .testimonial-footer {
-        padding: 15px 20px 20px;
+        padding: 15px 20px 20px !important;
     }
 
     .testimonials .testimonial-item .testimonial-footer h5 {
-        font-size: 1rem;
+        font-size: 1rem !important;
     }
 
     .testimonials .testimonial-item .testimonial-footer span {
-        font-size: 0.8rem;
+        font-size: 0.8rem !important;
     }
 
     .testimonials .testimonial-item .testimonial-footer .quote-icon {
-        font-size: 1.3rem;
-        bottom: 10px;
-        right: 15px;
+        font-size: 1.3rem !important;
+        bottom: 10px !important;
+        right: 15px !important;
     }
 
     .testimonials .swiper-button-prev,
     .testimonials .swiper-button-next {
-        width: 40px;
-        height: 40px;
-        font-size: 14px;
+        width: 40px !important;
+        height: 40px !important;
+        font-size: 14px !important;
     }
 
     .testimonials .swiper-button-prev::after,
     .testimonials .swiper-button-next::after {
-        font-size: 14px;
+        font-size: 14px !important;
     }
-    }
+}
 
-    @media (max-width: 575px) {
+@media (max-width: 575px) {
     .testimonials .testimonial-slider {
-        padding-bottom: 30px;
+        padding-bottom: 30px !important;
     }
 
     .testimonials .testimonial-item .testimonial-header {
-        padding: 15px 15px 10px;
+        padding: 15px 15px 10px !important;
     }
 
     .testimonials .testimonial-item .testimonial-header img {
-        width: 55px;
-        height: 55px;
+        width: 55px !important;
+        height: 55px !important;
     }
 
     .testimonials .testimonial-item .testimonial-body {
-        padding: 0 15px 10px;
+        padding: 0 15px 10px !important;
     }
 
     .testimonials .testimonial-item .testimonial-body p {
-        font-size: 0.9rem;
+        font-size: 0.9rem !important;
     }
 
     .testimonials .testimonial-item .testimonial-footer {
-        padding: 10px 15px 15px;
+        padding: 10px 15px 15px !important;
     }
 
     .testimonials .testimonial-item .testimonial-footer h5 {
-        font-size: 0.95rem;
+        font-size: 0.95rem !important;
     }
 
     .testimonials .testimonial-item .testimonial-footer .quote-icon {
-        font-size: 1.2rem;
+        font-size: 1.2rem !important;
     }
 
     .testimonials .swiper-navigation {
-        margin-top: 10px;
+        margin-top: 10px !important;
     }
-    }
+}
+
 
     /*--------------------------------------------------------------
     # Pricing Section
@@ -3519,14 +3521,14 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
             <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                <img src="./img/6.jpeg" alt="Youth Development Programme" class="img-fluid" loading="lazy">
+                <img src="https://www.jwvending.sg/wp-content/uploads/2026/01/6.jpeg" alt="Youth Development Programme" class="img-fluid" loading="lazy">
                 <div class="portfolio-overlay">
                     <div class="portfolio-info">
                     <span class="project-category"></span>
                     <h4></h4>
                     </div>
                     <div class="portfolio-actions">
-                    <a href="./img/6.jpeg" class="glightbox portfolio-link">
+                    <a href="https://www.jwvending.sg/wp-content/uploads/2026/01/6.jpeg" class="glightbox portfolio-link">
                         <i class="bi bi-plus-lg"></i>
                     </a>
                     </div>
@@ -3573,14 +3575,14 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-team">
             <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                <img src="./img/7.jpeg" alt="Team Training Session" class="img-fluid" loading="lazy">
+                <img src="https://www.jwvending.sg/wp-content/uploads/2026/01/7.jpeg" alt="Team Training Session" class="img-fluid" loading="lazy">
                 <div class="portfolio-overlay">
                     <div class="portfolio-info">
                     <span class="project-category"></span>
                     <h4></h4>
                     </div>
                     <div class="portfolio-actions">
-                    <a href="./img/7.jpeg" class="glightbox portfolio-link">
+                    <a href="https://www.jwvending.sg/wp-content/uploads/2026/01/7.jpeg" class="glightbox portfolio-link">
                         <i class="bi bi-plus-lg"></i>
                     </a>
                     </div>
@@ -3683,10 +3685,10 @@
           <div class="swiper-wrapper">
 
             <!-- Testimonial Slide 1 -->
-            <div class="swiper-slide">
+            <div class="" style="padding: 10px 10px 10px;">
               <div class="testimonial-item" data-aos="zoom-in" data-aos-delay="200">
                 <div class="testimonial-header">
-                  <img src="./img/profile.png" alt="Client" class="img-fluid" loading="lazy">
+                  <img src="https://www.jwvending.sg/wp-content/uploads/2022/04/useracc-icon.svg" alt="Client" class="img-fluid" loading="lazy">
                   <div class="rating">
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
@@ -3704,10 +3706,10 @@
             </div><!-- End Testimonial Slide -->
 
             <!-- Testimonial Slide 2 -->
-            <div class="swiper-slide">
+            <div class="" style="padding: 10px 10px 10px;">
               <div class="testimonial-item" data-aos="zoom-in" data-aos-delay="300">
                 <div class="testimonial-header">
-                  <img src="./img/profile.png" alt="Client" class="img-fluid" loading="lazy">
+                  <img src="https://www.jwvending.sg/wp-content/uploads/2022/04/useracc-icon.svg" alt="Client" class="img-fluid" loading="lazy">
                   <div class="rating">
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
@@ -3719,13 +3721,11 @@
                 <div class="testimonial-body">
                   <p>
                 Hi Junwei, happy to inform you that ██████ was confirmed by ██████ too.
-                Thanks for all your coaching for the past two years+. 🙏
+                Thanks for all your coaching for the past two years+.
                 </p>
                 </div>
               </div>
             </div><!-- End Testimonial Slide -->
-
-          </div>
 
           <!-- <div class="swiper-navigation">
             <div class="swiper-button-prev"></div>
